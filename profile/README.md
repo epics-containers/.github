@@ -1,9 +1,27 @@
-## epics-containers organization
-
-RECENT UPDATES, See [here](https://epics-containers.github.io/dev/index.html#update-for-march-2023)
+# EPICS Containers Organization
 
 The epics-containers GitHub organization holds a collection of tools and documentation for building, deploying and managing containerized EPICS IOCs in a Kubernetes cluster.
 
-Please contribute with comments and suggestions in  or the [Discussion Forum](https://github.com/epics-containers/epics-containers.github.io/discussions)
+Please contribute with comments and suggestions in the [Discussion Forum](https://github.com/epics-containers/epics-containers.github.io/discussions)
 or the [Wiki](https://github.com/epics-containers/epics-containers.github.io/wiki)
+
+Latest News: the framework is in the process of a major overhaul. Consequently
+the tutorials are currently out of date. The new approach is greatly simplified
+and will have a new tutorial By end of November 2023.
+
+# Current Status
+| Repository | Description | Status | Version | Release Date |
+|------------|-------------|--------|---------|--------------|
+|[ibek](https://github.com/epics-containers/ibek)| IOC Builder for EPICS and Kubernetes|![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/ibek/code.yml)|![PyPI - Version](https://img.shields.io/pypi/v/ibek)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ibek)
+|[ibek-support](https://github.com/epics-containers/ibek-support)|Support module build in container scripts|![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/ibek-support/buiild.yml)|submodule only|![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/ibek-support/main)
+|[epics-containers-cli](https://github.com/epics-containers/epics-containers-cli)| CLI tools for outside container| ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/epics-containers-cli/code.yml)|![PyPI - Version](https://img.shields.io/pypi/v/epics-containers-cli)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/epics-containers-cli)
+|[epics-base](https://github.com/epics-containers/epics-base)| Base image for EPICS IOCs|![itHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/epics-base/buiild.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/epics-base/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/epics-base)
+|[ioc-template](https://github.com/epics-containers/ioc-template)| Template for Generic EPICS IOCs|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/ioc-template/buiild.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/ioc-template/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ioc-template)
+|[ioc-adsimdetector](https://github.com/epics-containers/ioc-adsimdetector)| Generic IOC with ADSimDetector|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/ioc-adsimdetector/buiild.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/ioc-adsimdetector/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ioc-adsimdetector)
+|[ioc-adaravis](https://github.com/epics-containers/ioc-adaravis)| Generic IOC with ADAravis|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/ioc-adaravis/buiild.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/ioc-adaravis/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ioc-adaravis)
+|[blxxi-template](https://github.com/epics-containers/blxxi-template)| Template for beamline/domain repos|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/blxxi-template/build.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/blxxi-template/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/blxxi-template)
+|[bl45p](https://github.com/epics-containers/bl45p)| Example containerised Beamline|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/bl45p/verify.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/bl45p/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/bl45p)
+|[pvi](https://github.com/epics-containers/pvi)| PV Interface for defining Devices, generating Device screens  |![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/pvi/code.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/pvi/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/pvi)
+|[Github.io](https://github.com/epics-containers/epics-containers-github.io)| Documentation and Tutorials |![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/epics-containers.github.io/docs.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/epics-containers.github.io/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/epics-containers.github.io)
+
 
