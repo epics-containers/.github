@@ -12,9 +12,10 @@ and will have a new tutorial By end of November 2023.
 # Current Status
 
 ## Epics Containers Framework Repositories
+
 --------------------------------------------------------------
-| Repository | Description | Status | Version | Release Date |
-|------------|-------------|--------|---------|--------------|
+| <div style="width:80px">Repository</div> | <div style="width:80px;overflow:scroll;">Description</div>| <div style="width:60px">Status</div> | <div style="width:80px">Version</div> | <div style="width:80px">Release Date</div> |
+|-------------------------------------------------------------------------------------|-------------|--------|---------|--------------|
 |[Github.io](https://github.com/epics-containers/epics-containers-github.io)| Documentation and Tutorials |![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/epics-containers.github.io/docs.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/epics-containers.github.io/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/epics-containers.github.io?label=date)
 |[ibek](https://github.com/epics-containers/ibek)| IOC Builder for EPICS<br>and Kubernetes|![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/ibek/code.yml)|![PyPI - Version](https://img.shields.io/pypi/v/ibek)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ibek?label=date)
 |[ibek-support](https://github.com/epics-containers/ibek-support)|Support module build<br>in container scripts|![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/epics-containers/ibek-support/buiild.yml?style=plastic)|*submodule only*|![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/ibek-support/main?label=date)
@@ -27,7 +28,7 @@ and will have a new tutorial By end of November 2023.
 ## Reference Implementations
 
 --------------------------------------------------------------
-| Repository | Description | Status | Version | Release Date |
+| <div style="width:80px">Repository</div> | <div style="width:80px">Description</div>| <div style="width:60px">Status</div> | <div style="width:80px">Version</div> | <div style="width:80px">Release Date</div> |
 |------------|-------------|--------|---------|--------------|
 |[bl45p](https://github.com/epics-containers/bl45p)| Example containerised Beamline|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/bl45p/verify.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/bl45p/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/bl45p?label=date)
 |[ioc-adsimdetector](https://github.com/epics-containers/ioc-adsimdetector)| Generic IOC with ADSimDetector|![Status](https://img.shields.io/github/actions/workflow/status/epics-containers/ioc-adsimdetector/buiild.yml)|![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/release/epics-containers/ioc-adsimdetector/all?include_prereleases)|![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/epics-containers/ioc-adsimdetector?label=date)
