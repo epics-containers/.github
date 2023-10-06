@@ -37,7 +37,7 @@ def main():
                 "name": "ibek",
                 "repo_name": "ibek",
                 "actions_file": "code.yml",
-                "description": "IOC Builder for EPICS and Kubernetes",
+                "description": "IOC Builder for EPICS<br>and Kubernetes",
             },
         },
         {
@@ -46,7 +46,7 @@ def main():
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
                 "actions_file": "build.yml",
-                "description": "scripts for building support modules with ibek",
+                "description": "scripts for building support<br>modules with ibek",
             },
         },
         {
@@ -55,7 +55,7 @@ def main():
                 "name": "epics-containers-cli",
                 "repo_name": "epics-containers-cli",
                 "actions_file": "code.yml",
-                "description": "CLI dev tools for outside containers",
+                "description": "CLI dev tools for<br>outside containers",
             },
         },
         {
@@ -64,7 +64,7 @@ def main():
                 "name": "epics-base",
                 "repo_name": "epics-base",
                 "actions_file": "build.yml",
-                "description": "Base image for Generic IOCs",
+                "description": "Base image for<br>Generic IOCs",
             },
         },
         {
@@ -73,7 +73,7 @@ def main():
                 "name": "pvi",
                 "repo_name": "pvi",
                 "actions_file": "code.yml",
-                "description": "PV Interface to define Devices, generate Device screens",
+                "description": "PV Interface to define<br>Devices and screens",
             },
         },
         {
@@ -82,7 +82,7 @@ def main():
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
                 "actions_file": "build.yml",
-                "description": "Template for Generic EPICS IOCs",
+                "description": "Template for Generic<br>EPICS IOCs",
             },
         },
         {
@@ -91,7 +91,7 @@ def main():
                 "name": "blxxi-template",
                 "repo_name": "blxxi-template",
                 "actions_file": "verify.yml",
-                "description": "Template for Beamline and Accelerator Domain repos",
+                "description": "Template for Beamline,<br>Accelerator Domain repos",
             },
         },
     ]
