@@ -1,10 +1,15 @@
+from pathlib import Path
+
+
 HEADER = '<div style="width:{width}px">{heading}</div>'
 REPO = "[{name}](https://github.com/epics-containers/{repo_name})"
 DESCRIPTION = "{description}"
 STATUS = "[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/epics-containers/{repo_name}/{actions_file})](https://github.com/epics-containers/{repo_name}/actions)"
-VERSION = "![GitHub version](https://img.shields.io/github/release/epics-containers/{repo_name}/all?include_prereleases)"
-RELEASE = "![GitHub Release Date](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=date)"
-PYPI="![PyPI - Version](https://img.shields.io/pypi/v/{repo_name})"
+VERSION = "![GitHub version](https://img.shields.io/github/release/epics-containers/{repo_name}/all?include_prereleases;label=tag)"
+RELEASE = "[![GitHub Release Date](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=date)](https://github.com/epics-containers/{repo_name}/releases)"
+PYPI = "[![PyPI - Version](https://img.shields.io/pypi/v/{repo_name})](https://pypi.org/project/{repo_name}/)"
+COMMIT = "![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/{repo_name}/main?label=commit)"
+
 
 def main():
     header = [
@@ -16,7 +21,7 @@ def main():
     ]
     divider = ["-" * len(heading) for heading in header]
 
-    row_defs = [
+    frameworks = [
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
@@ -30,14 +35,13 @@ def main():
             0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
             1: {
                 "name": "ibek",
-                "url": "https://epics-containers/ibek",
                 "repo_name": "ibek",
                 "actions_file": "code.yml",
                 "description": "IOC Builder for EPICS and Kubernetes",
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, "*submodule only*", RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, "*submodule only*", COMMIT],
             1: {
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
@@ -46,7 +50,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
             1: {
                 "name": "epics-containers-cli",
                 "repo_name": "epics-containers-cli",
@@ -90,6 +94,8 @@ def main():
                 "description": "Template for Beamline and Accelerator Domain repos",
             },
         },
+    ]
+    reference = [
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
@@ -119,14 +125,23 @@ def main():
         },
     ]
 
-    rows = []
-    for row_def in row_defs:
-        row = [pattern.format(**row_def[1]) for pattern in row_def[0]]
-        rows.append(row)
+    sections = {}
+    for num, section in enumerate([frameworks, reference]):
+        rows = []
+        for row_def in section:
+            row = [pattern.format(**row_def[1]) for pattern in row_def[0]]
+            rows.append(row)
 
-    for line in [header, divider] + rows:
-        print("|" + "|".join(line) + "|")
+        sections[num] = ""
+        for line in [header, divider] + rows:
+            sections[num] += "|" + "|".join(line) + "|\n"
 
+    file = Path("README.template.md")
+    template = file.read_text()
+    text = template.format(sections=sections)
+
+    file = Path("README.md")
+    file.write_text(text)
 
 if __name__ == "__main__":
     main()
