@@ -27,7 +27,7 @@ def main():
             1: {
                 "name": "github.io",
                 "repo_name": "epics-containers.github.io",
-                "actions_file": "code.yml",
+                "actions_file": "docs.yml",
                 "description": "epics-containers documentation",
             },
         },
@@ -142,6 +142,7 @@ def main():
 
     file = Path("README.md")
     file.write_text(text)
+
 
 if __name__ == "__main__":
     main()
