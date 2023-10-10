@@ -23,12 +23,13 @@ def main():
         HEADER.format(width=80, heading="Status"),
         HEADER.format(width=80, heading="Version"),
         HEADER.format(width=80, heading="Release"),
+        HEADER.format(width=80, heading="Dev Commit"),
     ]
     divider = ["-" * len(heading) for heading in header]
 
     frameworks = [
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "github.io",
                 "repo_name": "epics-containers.github.io",
@@ -37,7 +38,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
             1: {
                 "name": "ibek",
                 "repo_name": "ibek",
@@ -46,7 +47,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, "*submodule only*", MAIN_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, "*submodule only*", MAIN_COMMIT, DEV_COMMIT],
             1: {
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
@@ -55,7 +56,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
             1: {
                 "name": "epics-containers-cli",
                 "repo_name": "epics-containers-cli",
@@ -64,7 +65,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "epics-base",
                 "repo_name": "epics-base",
@@ -73,7 +74,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
             1: {
                 "name": "pvi",
                 "repo_name": "pvi",
@@ -82,7 +83,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
@@ -91,7 +92,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "blxxi-template",
                 "repo_name": "blxxi-template",
@@ -102,7 +103,7 @@ def main():
     ]
     reference = [
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "bl45p",
                 "repo_name": "bl45p",
@@ -111,7 +112,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "ioc-adsimdetector",
                 "repo_name": "ioc-adsimdetector",
@@ -120,7 +121,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
                 "name": "ioc-adaravis",
                 "repo_name": "ioc-adaravis",
