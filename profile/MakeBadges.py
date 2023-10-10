@@ -34,7 +34,7 @@ def main():
                 "name": "github.io",
                 "repo_name": "epics-containers.github.io",
                 "actions_file": "docs.yml",
-                "description": "epics-containers documentation",
+                "description": "epics-containers<br>documentation",
             },
         },
         {
@@ -52,7 +52,7 @@ def main():
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
                 "actions_file": "build.yml",
-                "description": "scripts for building support<br>modules with ibek",
+                "description": "build support<br>modules with ibek",
             },
         },
         {
@@ -97,7 +97,7 @@ def main():
                 "name": "blxxi-template",
                 "repo_name": "blxxi-template",
                 "actions_file": "verify.yml",
-                "description": "Template for Beamline,<br>Accelerator Domain repos",
+                "description": "Template for <br>Domain repos",
             },
         },
     ]
