@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 HEADER = '<div style="width:{width}px">{heading}</div>'
 REPO = "[{name}](https://github.com/epics-containers/{repo_name})"
 DESCRIPTION = "{description}"
@@ -102,6 +101,15 @@ def main():
         },
     ]
     reference = [
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            1: {
+                "name": "bl38p",
+                "repo_name": "bl38p",
+                "actions_file": "verify.yml",
+                "description": "Reference Containerized Beamline",
+            },
+        },
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
             1: {
