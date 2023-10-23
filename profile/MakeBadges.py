@@ -124,7 +124,7 @@ def main():
             1: {
                 "name": "ioc-adsimdetector",
                 "repo_name": "ioc-adsimdetector",
-                "actions_file": "buiild.yml",
+                "actions_file": "build.yml",
                 "description": "Generic IOC with ADSimDetector",
             },
         },
@@ -133,7 +133,7 @@ def main():
             1: {
                 "name": "ioc-adaravis",
                 "repo_name": "ioc-adaravis",
-                "actions_file": "buiild.yml",
+                "actions_file": "build.yml",
                 "description": "Generic IOC with ADAravis",
             },
         },
