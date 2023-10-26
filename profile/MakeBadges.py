@@ -99,6 +99,15 @@ def main():
                 "description": "Template for <br>Domain repos",
             },
         },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            1: {
+                "name": "ec-helm-charts",
+                "repo_name": "ec-helm-charts",
+                "actions_file": "helm_deploy.yml",
+                "description": "helm charts for<br>EPICS Containers",
+            },
+        },
     ]
     reference = [
         {
