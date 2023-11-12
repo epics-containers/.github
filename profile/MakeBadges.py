@@ -6,8 +6,8 @@ DESCRIPTION = "{description}"
 STATUS = "[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/epics-containers/{repo_name}/{actions_file})](https://github.com/epics-containers/{repo_name}/actions)"
 VERSION = "![GitHub version](https://img.shields.io/github/release/epics-containers/{repo_name}/all?include_prereleases;label=tag)"
 DEV_COMMIT = "![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/{repo_name}/dev?label=dev)"
-RELEASE = "[![GitHub Release Date](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=rel)](https://github.com/epics-containers/{repo_name}/releases)"
-PYPI = "[![PyPI - Version](https://img.shields.io/pypi/v/{repo_name})](https://pypi.org/project/{repo_name}/)"
+RELEASE = "[![GitHub Release Date](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=release)](https://github.com/epics-containers/{repo_name}/releases)"
+PYPI = "[![PyPI - Version](https://img.shields.io/pypi/v/{repo_name}?label=pypiver)](https://pypi.org/project/{repo_name})"
 MAIN_COMMIT = "![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/{repo_name}/main?label=main)"
 
 DATES = f"{RELEASE}<br>{DEV_COMMIT}"
@@ -20,7 +20,6 @@ def main():
         HEADER.format(width=90, heading="Repositories"),
         HEADER.format(width=120, heading="Description"),
         HEADER.format(width=80, heading="Status"),
-        HEADER.format(width=80, heading="Version"),
         HEADER.format(width=80, heading="Release"),
         HEADER.format(width=80, heading="Dev Commit"),
     ]
@@ -28,7 +27,7 @@ def main():
 
     frameworks = [
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "github.io",
                 "repo_name": "epics-containers.github.io",
@@ -37,7 +36,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{PYPI}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "ibek",
                 "repo_name": "ibek",
@@ -46,34 +45,25 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, "*submodule only*", MAIN_COMMIT, DEV_COMMIT],
-            1: {
-                "name": "ibek-support",
-                "repo_name": "ibek-support",
-                "actions_file": "build.yml",
-                "description": "build support<br>modules with ibek",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{PYPI}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "epics-containers-cli",
                 "repo_name": "epics-containers-cli",
                 "actions_file": "code.yml",
-                "description": "CLI dev tools for<br>outside containers",
+                "description": "CLI dev tools for outside containers",
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "epics-base",
                 "repo_name": "epics-base",
                 "actions_file": "build.yml",
-                "description": "Base image for<br>Generic IOCs",
+                "description": "Base image for Generic IOCs",
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{PYPI}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "pvi",
                 "repo_name": "pvi",
@@ -82,36 +72,45 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
                 "actions_file": "build.yml",
-                "description": "Template for Generic<br>EPICS IOCs",
+                "description": "Template for Generic EPICS IOCs",
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "blxxi-template",
                 "repo_name": "blxxi-template",
                 "actions_file": "verify.yml",
-                "description": "Template for <br>Domain repos",
+                "description": "Template for  Domain repos",
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "ec-helm-charts",
                 "repo_name": "ec-helm-charts",
                 "actions_file": "helm_deploy.yml",
-                "description": "helm charts for<br>EPICS Containers",
+                "description": "helm charts for PICS Containers",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, MAIN_COMMIT, DEV_COMMIT],
+            1: {
+                "name": "ibek-support",
+                "repo_name": "ibek-support",
+                "actions_file": "build.yml",
+                "description": "build support modules with ibek",
             },
         },
     ]
     reference = [
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "bl38p",
                 "repo_name": "bl38p",
@@ -120,7 +119,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "bl45p",
                 "repo_name": "bl45p",
@@ -129,7 +128,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "ioc-adsimdetector",
                 "repo_name": "ioc-adsimdetector",
@@ -138,7 +137,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE, DEV_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, f"{VERSION}<br>{RELEASE}", DEV_COMMIT],
             1: {
                 "name": "ioc-adaravis",
                 "repo_name": "ioc-adaravis",
