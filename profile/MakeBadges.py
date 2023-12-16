@@ -21,7 +21,7 @@ def main():
         HEADER.format(width=120, heading="Description"),
         HEADER.format(width=80, heading="Status"),
         HEADER.format(width=80, heading="Release"),
-        HEADER.format(width=80, heading="Dev Commit"),
+        HEADER.format(width=80, heading="Last Commit"),
     ]
     divider = ["-" * len(heading) for heading in header]
 
