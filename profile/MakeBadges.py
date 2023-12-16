@@ -20,8 +20,8 @@ def main():
         HEADER.format(width=90, heading="Repositories"),
         HEADER.format(width=120, heading="Description"),
         HEADER.format(width=80, heading="Status"),
-        HEADER.format(width=80, heading="Release"),
-        HEADER.format(width=80, heading="Last Commit"),
+        HEADER.format(width=80, heading="Version"),
+        HEADER.format(width=80, heading="Release Date"),
     ]
     divider = ["-" * len(heading) for heading in header]
 
