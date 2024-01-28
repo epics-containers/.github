@@ -112,19 +112,10 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "bl38p",
-                "repo_name": "bl38p",
+                "name": "bl47p",
+                "repo_name": "bl47p",
                 "actions_file": "verify.yml",
-                "description": "Reference Containerized Beamline",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
-            1: {
-                "name": "bl45p",
-                "repo_name": "bl45p",
-                "actions_file": "verify.yml",
-                "description": "Example Containerized Beamline",
+                "description": "Reference Containerized Test Beamline",
             },
         },
         {
