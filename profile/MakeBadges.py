@@ -31,7 +31,7 @@ def main():
             1: {
                 "name": "Documentation",
                 "repo_name": "epics-containers.github.io",
-                "actions_file": "docs.yml",
+                "actions_file": "ci.yml",
                 "description": "epics-containers<br>documentation",
             },
         },
