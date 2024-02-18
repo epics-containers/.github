@@ -29,7 +29,7 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "github.io",
+                "name": "Documentation",
                 "repo_name": "epics-containers.github.io",
                 "actions_file": "docs.yml",
                 "description": "epics-containers<br>documentation",
@@ -47,9 +47,9 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
             1: {
-                "name": "epics-containers-cli",
-                "repo_name": "epics-containers-cli",
-                "actions_file": "code.yml",
+                "name": "edge-containers-cli",
+                "repo_name": "edge-containers-cli",
+                "actions_file": "ci.yml",
                 "description": "CLI dev tools for outside containers",
             },
         },
@@ -72,7 +72,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, "no CI", VERSION, RELEASE],
             1: {
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
@@ -83,9 +83,9 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "blxxi-template",
-                "repo_name": "blxxi-template",
-                "actions_file": "verify.yml",
+                "name": "ec-services-template",
+                "repo_name": "ec-services-template",
+                "actions_file": "ci.yml",
                 "description": "Template for  Domain repos",
             },
         },
