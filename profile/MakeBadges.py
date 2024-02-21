@@ -65,24 +65,6 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
-            1: {
-                "name": "epics-base",
-                "repo_name": "epics-base",
-                "actions_file": "build.yml",
-                "description": "Base image for Generic IOCs",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
-            1: {
-                "name": "pvi",
-                "repo_name": "pvi",
-                "actions_file": "code.yml",
-                "description": "PV Interface to define<br>Devices and screens",
-            },
-        },
-        {
             0: [REPO, DESCRIPTION, "no CI", VERSION, RELEASE],
             1: {
                 "name": "ioc-template",
@@ -107,6 +89,24 @@ def main():
                 "repo_name": "ec-helm-charts",
                 "actions_file": "helm_deploy.yml",
                 "description": "helm charts for PICS Containers",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
+            1: {
+                "name": "pvi",
+                "repo_name": "pvi",
+                "actions_file": "code.yml",
+                "description": "PV Interface to define<br>Devices and screens",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "epics-base",
+                "repo_name": "epics-base",
+                "actions_file": "build.yml",
+                "description": "Base image for Generic IOCs",
             },
         },
     ]
