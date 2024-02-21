@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pathlib import Path
 
 HEADER = '<div style="width:{width}px">{heading}</div>'
@@ -27,21 +29,30 @@ def main():
 
     frameworks = [
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
-            1: {
-                "name": "Documentation",
-                "repo_name": "epics-containers.github.io",
-                "actions_file": "ci.yml",
-                "description": "epics-containers<br>documentation",
-            },
-        },
-        {
             0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
             1: {
                 "name": "ibek",
                 "repo_name": "ibek",
                 "actions_file": "code.yml",
                 "description": "IOC Builder for EPICS<br>and Kubernetes",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, MAIN_COMMIT],
+            1: {
+                "name": "ibek-support",
+                "repo_name": "ibek-support",
+                "actions_file": "build.yml",
+                "description": "build support modules with ibek",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "Documentation",
+                "repo_name": "epics-containers.github.io",
+                "actions_file": "ci.yml",
+                "description": "epics-containers<br>documentation",
             },
         },
         {
@@ -96,15 +107,6 @@ def main():
                 "repo_name": "ec-helm-charts",
                 "actions_file": "helm_deploy.yml",
                 "description": "helm charts for PICS Containers",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, MAIN_COMMIT],
-            1: {
-                "name": "ibek-support",
-                "repo_name": "ibek-support",
-                "actions_file": "build.yml",
-                "description": "build support modules with ibek",
             },
         },
     ]
