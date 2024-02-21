@@ -99,7 +99,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, "submodule", MAIN_COMMIT],
+            0: [REPO, DESCRIPTION, STATUS, VERSION, MAIN_COMMIT],
             1: {
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
