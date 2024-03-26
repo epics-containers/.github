@@ -109,6 +109,24 @@ def main():
                 "description": "Base image for Generic IOCs",
             },
         },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "rtems-proxy",
+                "repo_name": "rtems-proxy",
+                "actions_file": "ci.yml",
+                "description": "proxy container for RTEMS 'hard' IOCs",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "rtems-bsp",
+                "repo_name": "rtems-bsp",
+                "actions_file": "build.yml",
+                "description": "container for RTEMS Board Support Packages",
+            },
+        },
     ]
     reference = [
         {
@@ -136,6 +154,15 @@ def main():
                 "repo_name": "ioc-adaravis",
                 "actions_file": "build.yml",
                 "description": "Generic IOC with ADAravis",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "ioc-pmac",
+                "repo_name": "ioc-pmac",
+                "actions_file": "build.yml",
+                "description": "Generic IOC for motion",
             },
         },
     ]
