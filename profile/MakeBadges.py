@@ -142,7 +142,7 @@ def main():
                 "name": "ec-cli",
                 "repo_name": "edge-containers-cli",
                 "actions_file": "ci.yml",
-                "description": "CLI dev tools for outside containers",
+                "description": "CLI developer/user tool for outside of containers",
             },
         },
     ]
