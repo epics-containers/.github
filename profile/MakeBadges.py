@@ -34,7 +34,7 @@ def main():
                 "name": "Documentation",
                 "repo_name": "epics-containers.github.io",
                 "actions_file": "ci.yml",
-                "description": "epics-containers<br>documentation",
+                "description": "epics-containers documentation and tutorials",
             },
         },
         {
@@ -43,7 +43,7 @@ def main():
                 "name": "ibek",
                 "repo_name": "ibek",
                 "actions_file": "code.yml",
-                "description": "IOC Builder for EPICS<br>and Kubernetes",
+                "description": "IOC Builder for EPICS and Kubernetes",
             },
         },
         {
@@ -52,7 +52,7 @@ def main():
                 "name": "ibek-support",
                 "repo_name": "ibek-support",
                 "actions_file": "build.yml",
-                "description": "build support modules with ibek",
+                "description": "recipies for using support modules with ibek",
             },
         },
         {
@@ -60,8 +60,8 @@ def main():
             1: {
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
-                "actions_file": "build.yml",
-                "description": "Template for Generic EPICS IOCs",
+                "actions_file": "ci.yml",
+                "description": "Template for Generic EPICS IOCs container projects",
             },
         },
         {
@@ -97,7 +97,7 @@ def main():
                 "name": "ec-helm-charts",
                 "repo_name": "ec-helm-charts",
                 "actions_file": "helm_deploy.yml",
-                "description": "helm charts for PICS Containers",
+                "description": "helm charts for IOC instances and other services",
             },
         },
         {
@@ -106,7 +106,7 @@ def main():
                 "name": "pvi",
                 "repo_name": "pvi",
                 "actions_file": "code.yml",
-                "description": "PV Interface to define<br>Devices and screens",
+                "description": "Process Variable Interface: define Devices and screens",
             },
         },
         {
@@ -115,7 +115,7 @@ def main():
                 "name": "epics-base",
                 "repo_name": "epics-base",
                 "actions_file": "build.yml",
-                "description": "Base image for Generic IOCs",
+                "description": "Base container image for all Generic IOCs",
             },
         },
         {
@@ -150,8 +150,8 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "p47-beamline",
-                "repo_name": "p47-beamline",
+                "name": "p47-services",
+                "repo_name": "p47-services",
                 "actions_file": "verify.yml",
                 "description": "Reference Containerized Training Beamline",
             },
@@ -162,14 +162,14 @@ def main():
                 "name": "p47-deployment",
                 "repo_name": "p47-deployment",
                 "actions_file": "verify.yml",
-                "description": "Argo CD for p47-beamline",
+                "description": "Argo CD definition for p47-services",
             },
         },
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "p45-beamline",
-                "repo_name": "p45-beamline",
+                "name": "p45-services",
+                "repo_name": "p45-services",
                 "actions_file": "verify.yml",
                 "description": "Reference Containerized Test Beamline",
             },
@@ -180,7 +180,7 @@ def main():
                 "name": "p45-deployment",
                 "repo_name": "p45-deployment",
                 "actions_file": "verify.yml",
-                "description": "Argo CD for p45-beamline",
+                "description": "Argo CD definition for p45-services",
             },
         },
         {
@@ -189,7 +189,7 @@ def main():
                 "name": "ioc-adsimdetector",
                 "repo_name": "ioc-adsimdetector",
                 "actions_file": "build.yml",
-                "description": "Generic IOC with ADSimDetector",
+                "description": "Generic IOC for simulation detectors using ADSimDetector",
             },
         },
         {
@@ -198,7 +198,7 @@ def main():
                 "name": "ioc-adaravis",
                 "repo_name": "ioc-adaravis",
                 "actions_file": "build.yml",
-                "description": "Generic IOC with ADAravis",
+                "description": "Generic IOC for GiGe cameras using ADAravis",
             },
         },
         {
@@ -207,7 +207,7 @@ def main():
                 "name": "ioc-pmac",
                 "repo_name": "ioc-pmac",
                 "actions_file": "build.yml",
-                "description": "Generic IOC for motion",
+                "description": "Generic IOC for Delta Tau PMAC controllers",
             },
         },
         {
