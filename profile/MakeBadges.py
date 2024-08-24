@@ -65,7 +65,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, "No CI", VERSION, RELEASE],
             1: {
                 "name": "services-template-compose",
                 "repo_name": "services-template-compose",
@@ -74,7 +74,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, "No CI", VERSION, RELEASE],
             1: {
                 "name": "services-template-helm",
                 "repo_name": "services-template-helm",
