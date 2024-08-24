@@ -105,7 +105,7 @@ def main():
             1: {
                 "name": "pvi",
                 "repo_name": "pvi",
-                "actions_file": "code.yml",
+                "actions_file": "ci.yml",
                 "description": "Process Variable Interface: define Devices and screens",
             },
         },
@@ -215,7 +215,7 @@ def main():
             1: {
                 "name": "example-services",
                 "repo_name": "example-services",
-                "actions_file": "build.yml",
+                "actions_file": "verify.yml",
                 "description": "Simulation beamline using docker compose",
             },
         },
