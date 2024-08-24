@@ -6,9 +6,9 @@ HEADER = '<div style="width:{width}px">{heading}</div>'
 REPO = "[{name}](https://github.com/epics-containers/{repo_name})"
 DESCRIPTION = "{description}"
 STATUS = "[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/epics-containers/{repo_name}/{actions_file})](https://github.com/epics-containers/{repo_name}/actions)"
-VERSION = "[![GitHub version](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=tag)](https://github.com/epics-containers/{repo_name}/releases)"
 DEV_COMMIT = "![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/{repo_name}/dev?label=dev)"
 RELEASE = "[![GitHub Release Date](https://img.shields.io/github/release-date/epics-containers/{repo_name}?label=release)](https://github.com/epics-containers/{repo_name}/releases)"
+VERSION = "[![GitHub version](https://img.shields.io/github/release/epics-containers/{repo_name}/all?include_prereleases;label=tag)](https://github.com/epics-containers/{repo_name}/releases)"
 PYPI = "[![PyPI - Version](https://img.shields.io/pypi/v/{repo_name}?label=pypiver)](https://pypi.org/project/{repo_name})"
 MAIN_COMMIT = "![GitHub last commit (branch)](https://img.shields.io/github/last-commit/epics-containers/{repo_name}/main?label=main)"
 
@@ -20,10 +20,10 @@ CIPYPI = f"{STATUS}<br>{PYPI}"
 def main():
     header = [
         HEADER.format(width=90, heading="Repositories"),
-        HEADER.format(width=120, heading="Description"),
-        HEADER.format(width=80, heading="Status"),
-        HEADER.format(width=80, heading="Version"),
-        HEADER.format(width=80, heading="Release Date"),
+        HEADER.format(width=100, heading="Description"),
+        HEADER.format(width=90, heading="Status"),
+        HEADER.format(width=90, heading="Version"),
+        HEADER.format(width=90, heading="Release Date"),
     ]
     divider = ["-" * len(heading) for heading in header]
 
