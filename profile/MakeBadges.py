@@ -68,7 +68,7 @@ def main():
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
                 "name": "services-template-compose",
-                "repo_name": "ec-services-template",
+                "repo_name": "services-template-compose",
                 "actions_file": "ci.yml",
                 "description": "Template for ioc instances deployed using docker-compose",
             },
@@ -77,7 +77,7 @@ def main():
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
                 "name": "services-template-helm",
-                "repo_name": "ec-services-template",
+                "repo_name": "services-template-helm",
                 "actions_file": "ci.yml",
                 "description": "Template for ioc instances deployed using helm",
             },
