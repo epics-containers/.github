@@ -29,6 +29,15 @@ def main():
 
     frameworks = [
         {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "Documentation",
+                "repo_name": "epics-containers.github.io",
+                "actions_file": "ci.yml",
+                "description": "epics-containers<br>documentation",
+            },
+        },
+        {
             0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
             1: {
                 "name": "ibek",
@@ -49,24 +58,6 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "Documentation",
-                "repo_name": "epics-containers.github.io",
-                "actions_file": "ci.yml",
-                "description": "epics-containers<br>documentation",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
-            1: {
-                "name": "edge-containers-cli",
-                "repo_name": "edge-containers-cli",
-                "actions_file": "ci.yml",
-                "description": "CLI dev tools for outside containers",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, "no CI", VERSION, RELEASE],
-            1: {
                 "name": "ioc-template",
                 "repo_name": "ioc-template",
                 "actions_file": "build.yml",
@@ -76,10 +67,28 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "ec-services-template",
+                "name": "services-template-compose",
                 "repo_name": "ec-services-template",
                 "actions_file": "ci.yml",
-                "description": "Template for  Domain repos",
+                "description": "Template for ioc instances deployed using docker-compose",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "services-template-helm",
+                "repo_name": "ec-services-template",
+                "actions_file": "ci.yml",
+                "description": "Template for ioc instances deployed using helm",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "deployment-template-argocd",
+                "repo_name": "ec-services-template",
+                "actions_file": "ci.yml",
+                "description": "Template for continuous deployment using ArgoCD",
             },
         },
         {
@@ -127,15 +136,51 @@ def main():
                 "description": "container for RTEMS Board Support Packages",
             },
         },
+        {
+            0: [REPO, DESCRIPTION, STATUS, PYPI, RELEASE],
+            1: {
+                "name": "ec-cli",
+                "repo_name": "edge-containers-cli",
+                "actions_file": "ci.yml",
+                "description": "CLI dev tools for outside containers",
+            },
+        },
     ]
     reference = [
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
-                "name": "bl47p",
-                "repo_name": "bl47p",
+                "name": "p47-beamline",
+                "repo_name": "p47-beamline",
+                "actions_file": "verify.yml",
+                "description": "Reference Containerized Training Beamline",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "p47-deployment",
+                "repo_name": "p47-deployment",
+                "actions_file": "verify.yml",
+                "description": "Argo CD for p47-beamline",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "p45-beamline",
+                "repo_name": "p45-beamline",
                 "actions_file": "verify.yml",
                 "description": "Reference Containerized Test Beamline",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "p45-deployment",
+                "repo_name": "p45-deployment",
+                "actions_file": "verify.yml",
+                "description": "Argo CD for p45-beamline",
             },
         },
         {
@@ -163,6 +208,15 @@ def main():
                 "repo_name": "ioc-pmac",
                 "actions_file": "build.yml",
                 "description": "Generic IOC for motion",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "example-services",
+                "repo_name": "example-services",
+                "actions_file": "build.yml",
+                "description": "Simulation beamline using docker compose",
             },
         },
     ]
