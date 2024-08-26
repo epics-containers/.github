@@ -213,6 +213,15 @@ def main():
         {
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
+                "name": "ioc-motorsim",
+                "repo_name": "ioc-motorsim",
+                "actions_file": "build.yml",
+                "description": "Generic IOC for simulation motor controllers",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
                 "name": "example-services",
                 "repo_name": "example-services",
                 "actions_file": "verify.yml",
