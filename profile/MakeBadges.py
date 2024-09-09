@@ -86,7 +86,7 @@ def main():
             0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
             1: {
                 "name": "deployment-template-argocd",
-                "repo_name": "ec-services-template",
+                "repo_name": "deployment-template-argocd",
                 "actions_file": "ci.yml",
                 "description": "Template for continuous deployment using ArgoCD",
             },
