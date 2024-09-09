@@ -83,7 +83,7 @@ def main():
             },
         },
         {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            0: [REPO, DESCRIPTION, "No CI", VERSION, RELEASE],
             1: {
                 "name": "deployment-template-argocd",
                 "repo_name": "deployment-template-argocd",
