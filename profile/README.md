@@ -12,12 +12,13 @@ or the [Wiki](https://github.com/epics-containers/epics-containers.github.io/wik
 If you discover issues with the framework please raise them in the
 [Issue Tracker](https://github.com/epics-containers/epics-containers.github.io/issues)
 
-
-Latest News: the framework is in the process of a major overhaul. Consequently
-the tutorials are currently out of date. The new approach is greatly simplified
-and will have a new tutorial By end of November 2023.
-
 # Current Status
+
+All tutorials are up to date with the latest version of the framework released in Januanry 2025.
+
+RTEMS on MVME5500 is now fully supported. Documentation is TBA.
+
+ArgoCD deployment is now supported. Documentation is TBA.
 
 ## Epics Containers Framework Repositories
 
