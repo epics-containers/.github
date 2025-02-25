@@ -42,7 +42,7 @@ def main():
             1: {
                 "name": "ibek",
                 "repo_name": "ibek",
-                "actions_file": "code.yml",
+                "actions_file": "ci.yml",
                 "description": "IOC Builder for EPICS and Kubernetes",
             },
         },
