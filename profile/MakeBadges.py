@@ -65,6 +65,15 @@ def main():
             },
         },
         {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "ioc-generic",
+                "repo_name": "ioc-generic",
+                "actions_file": "build.yml",
+                "description": "A Quick to load developer container IOC",
+            },
+        },
+        {
             0: [REPO, DESCRIPTION, "No CI", VERSION, RELEASE],
             1: {
                 "name": "services-template-compose",
