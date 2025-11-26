@@ -124,7 +124,25 @@ def main():
                 "name": "epics-base",
                 "repo_name": "epics-base",
                 "actions_file": "build.yml",
-                "description": "Base container image for all Generic IOCs",
+                "description": "Base container for all Generic IOCs",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "ioc-asyn",
+                "repo_name": "ioc-asyn",
+                "actions_file": "build.yml",
+                "description": "Base Generic IOC with pre-built common support",
+            },
+        },
+        {
+            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
+            1: {
+                "name": "ioc-areadetector",
+                "repo_name": "ioc-areadetector",
+                "actions_file": "build.yml",
+                "description": "Base Generic IOC with AreaDetector support",
             },
         },
         {
