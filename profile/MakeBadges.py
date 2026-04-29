@@ -105,7 +105,7 @@ def main():
             1: {
                 "name": "ec-helm-charts",
                 "repo_name": "ec-helm-charts",
-                "actions_file": "helm_deploy.yml",
+                "actions_file": "ci.yml",
                 "description": "helm charts for IOC instances and other services",
             },
         },
@@ -190,24 +190,6 @@ def main():
                 "repo_name": "p47-deployment",
                 "actions_file": "verify.yml",
                 "description": "Argo CD definition for p47-services",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
-            1: {
-                "name": "p45-services",
-                "repo_name": "p45-services",
-                "actions_file": "verify.yml",
-                "description": "Reference Containerized Test Beamline",
-            },
-        },
-        {
-            0: [REPO, DESCRIPTION, STATUS, VERSION, RELEASE],
-            1: {
-                "name": "p45-deployment",
-                "repo_name": "p45-deployment",
-                "actions_file": "verify.yml",
-                "description": "Argo CD definition for p45-services",
             },
         },
         {
