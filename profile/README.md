@@ -3,18 +3,10 @@
 Tools, container images, templates and documentation for building, deploying and
 managing containerised EPICS IOCs in a Kubernetes cluster.
 
-**Browse the repositories at [epics-containers.github.io/.github](https://epics-containers.github.io/.github/)**
-
 - [Documentation](https://epics-containers.github.io/)
 - [Discussion forum](https://github.com/epics-containers/epics-containers.github.io/discussions)
 - [Issue tracker](https://github.com/epics-containers/epics-containers.github.io/issues)
 - [Open issues and PRs across the organisation](https://epics-containers.github.io/org-dashboard/)
-
-## Current Status
-
-- All tutorials are up to date with the version of the framework released in January 2025.
-- RTEMS on MVME5500 is fully supported. Documentation is to be added.
-- Argo CD deployment is supported. Documentation is to be added.
 
 ## Tools
 
